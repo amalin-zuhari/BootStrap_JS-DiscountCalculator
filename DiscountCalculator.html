@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>JS Day 2 Task 1</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="form-group">
+        <label>Select User Type</label>
+        <select id="userType" class="form-control">
+          <option value="guest">Guest</option>
+          <option value="member">Member</option>
+          <option value="premium_member">Premium Member</option>
+          <option value="employee">Employee</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Enter Purchase Amount (RM)</label>
+        <input type="number" id="amount" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <button onclick="calcDiscount()" class="btn btn-primary btn-sm">
+          CHECK
+        </button>
+      </div>
+      <hr />
+      <div class="alert alert-primary" id="discountEligible"></div>
+      <div class="alert alert-success" id="finalPrice"></div>
+    </div>
+
+    <script src="disccalc.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
